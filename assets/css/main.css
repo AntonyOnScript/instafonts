@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    font: 400 25px "Poppins";
+    color: white;
+}
+
+header{
+    background-color: var(--bs-dark);
+}
+
+h3.logo{
+    font: 400 25px "Lobster Two";
+    margin: 0;
+    transition: text-shadow .4s;
+}
+
+h3.logo:hover, h3.logo:focus, h3.logo:active{
+    text-shadow: 0px 0px 3px white;
+}
+
+.link{
+    color:white;
+    transition: text-shadow .4s;
+}
+
+.link:hover, .link:focus, .link:active{
+    color: inherit;
+    text-shadow: 0px 0px 3px white;
+}
