@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 *{
     font: 400 25px "Poppins";
     color: white;
@@ -8,6 +26,10 @@
 
 header{
     background-color: var(--bs-dark);
+}
+
+p{
+    font-size: 18px;
 }
 
 .logo{
@@ -38,7 +60,7 @@ header{
 }
 
 section.main{
-
+    padding-bottom: 80px;
     min-height: 100vh;
 }
 
@@ -67,4 +89,21 @@ section.main{
 
 .convert-button-field{
     margin-top: 30px;
+}
+
+.about{
+    padding: 80px 0px;
+    background-color: var(--bs-dark);
+}
+
+.about-title{
+    font-size: 32px;
+}
+
+.about-paragraph{
+    margin: 15px 0px;
+}
+
+.places{
+    margin-top: 60px;
 }
