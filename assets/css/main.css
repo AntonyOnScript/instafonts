@@ -19,6 +19,16 @@ time, mark, audio, video {
 	border: 0;
 }
 
+::-moz-selection {
+    background-color: var(--bs-dark); 
+    color: white;
+}
+
+::selection { 
+    background-color: var(--bs-dark);
+    color: white; 
+}
+
 *{
     font: 400 25px "Poppins";
     color: white;
