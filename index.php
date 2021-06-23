@@ -12,19 +12,19 @@ require_once "inc/header.php";
                 <h1 class="logo large-logo text-center">InstaFonts.me</h1>
             </div>
         </div>
-        <div class="row font-field">
+        <div class="row font-field justify-content-center">
             <div class="row">
-                <div class="col sm-4">
+                <div class="col sm-4 pe-1">
                     <input type="text" class="form-control typed-text" placeholder="Your phrase, nickname or caption here.">
                 </div>
-                <div class="col-4">
+                <div class="col-4 ps-1">
                     <select class="form-control select-font">
-                        <option value="" readonly>Select a Font</option>
+                        <option value="" readonly>Font</option>
                     </select>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col mt-2">
                     <textarea class="form-field result-area" placeholder="Your result will be shown here."></textarea>
                 </div>
             </div>
