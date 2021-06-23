@@ -44,7 +44,18 @@ const CONVERT_BUTTON = document.querySelector(".convert-button")
 
 loadFonts()
 
+/* Event listeners */
+
+CONVERT_BUTTON.addEventListener("click", convertTypedText)
+
 /* Core functions */
+
+function convertTypedText(){
+    let chosenFont = SELECT_FONT.value
+    let typedText = TYPED_TEXT.value
+
+    RESULT_AREA.innerText = generateFontName(chosenFont, typedText)
+}
 
 function loadFonts(){
     for(let index = 1; index < formatedFontsName.length; index++){
@@ -64,7 +75,6 @@ function loadFonts(){
 function generateFontName(keyFontName, desiredFontName){
     let fontLetters = fonts[keyFontName]
     let fontName = changeLetters(desiredFontName, fontLetters)
-
     return fontName.join('')
 }
 
@@ -73,14 +83,14 @@ function changeLetters(string, letters){
 
     for(let i = 0; i < string.length; i++){
         let index = checkCharPositionAtAlphabet(string[i])
-        string[i] = letters[index]
+        if(index !== -1){
+            string[i] = letters[index]
+        }
     }
 
     return string
 }
 
 function checkCharPositionAtAlphabet(char){
-    if(fonts.base_font.indexOf(char) !== -1){
-        return fonts.base_font.indexOf(char)
-    }
+    return fonts.base_font.indexOf(char)
 }
