@@ -53,8 +53,8 @@ CONVERT_BUTTON.addEventListener("click", convertTypedText)
 function convertTypedText(){
     let chosenFont = SELECT_FONT.value
     let typedText = TYPED_TEXT.value
-
-    RESULT_AREA.innerText = generateFontName(chosenFont, typedText)
+    
+    RESULT_AREA.value = generateFontName(chosenFont, typedText)
 }
 
 function loadFonts(){
